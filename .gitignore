@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+
+# Environment variables file
+.env
+
+# Docker related files
+.docker/
+
+# Ignore logs
+*.log
+
+# Ignore user-specific files
+npm-debug.log
+.DS_Store

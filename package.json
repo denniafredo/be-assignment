@@ -1,0 +1,29 @@
+{
+  "name": "be-assignment",
+  "version": "1.0.0",
+  "description": "Build 2 Backend services which manages user’s accounts and transactions (send/withdraw).",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denniafredo/be-assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denniafredo/be-assignment/issues"
+  },
+  "homepage": "https://github.com/denniafredo/be-assignment#readme",
+  "dependencies": {
+    "@prisma/client": "^5.13.0",
+    "bcryptjs": "^2.4.3",
+    "fastify": "^3.29.5",
+    "fastify-static": "^4.7.0",
+    "fastify-swagger": "^5.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "prisma": "^5.13.0"
+  }
+}

@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  fastify:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgresql://postgres:root@postgres:5432/concreteai
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: concreteai
+    ports:
+      - "5432:5432"
